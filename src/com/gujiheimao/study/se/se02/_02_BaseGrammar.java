@@ -1,4 +1,4 @@
-package com.gujiheimao.study.se;
+package com.gujiheimao.study.se.se02;
 
 /**
  * 02.这里是类的基本语法

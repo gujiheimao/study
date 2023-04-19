@@ -1,4 +1,4 @@
-package com.gujiheimao.study.se;
+package com.gujiheimao.study.se.se01;
 
 /**
  * 这里创建了一个名为_01_HelloWorld的类，它是public修饰的，所以它可以被其他类访问
