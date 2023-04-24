@@ -3,7 +3,7 @@ package com.gujiheimao.study.se.se02;
 /**
  * 02.这里是类的基本语法
  */
-public class _02_BaseGrammar {
+public  class _02_BaseGrammar {
     /**
      * 在jvm中执行此代码的过程如下：
      *
@@ -81,6 +81,7 @@ public class _02_BaseGrammar {
         println(sum);
     }
 
+
     /**
      * 这里定义的是一个println方法，它是用来打印字符串的
      * 可以向里面传递一个参数，再将这个参数打印到控制台
@@ -105,6 +106,10 @@ public class _02_BaseGrammar {
      * @return 返回两个加数的和
      */
     public static int sum(int a, int b) {
+
         return a + b;
+
     }
+
+
 }

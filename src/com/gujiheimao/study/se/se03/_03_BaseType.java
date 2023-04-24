@@ -99,3 +99,37 @@ public class _03_BaseType {
     }
 
 }
+class Test{
+    public static void main(String[] args) {
+        //将二进制转为float
+        System.out.println(Float.intBitsToFloat(0b0_10000001_00000000000000000000000));
+        //将float转为二进制字符串
+        System.out.println(toBinaryString(Float.floatToIntBits(0f)));
+        System.out.println(toBinaryString(Float.floatToIntBits(1.1f)));
+        System.out.println(toBinaryString(Float.floatToIntBits(1.2f)));
+        System.out.println(toBinaryString(Float.floatToIntBits(1.3f)));
+        System.out.println(toBinaryString(Float.floatToIntBits(1.4f)));
+        System.out.println(toBinaryString(Float.floatToIntBits(1.5f)));
+        short s = (short) 0b10000000000000010000000000000001;
+        System.out.println(s);
+        System.out.println(Integer.toBinaryString(129));
+    }
+
+    /**
+     * 将数字补足到32位
+     * 并在第一个二进制数字后，以及第9个二进制数字后，加上下划线
+     * @param i
+     * @return
+     */
+    public static String toBinaryString(int i){
+        String s = Integer.toBinaryString(i);
+        int len = s.length();
+        if(len < 32){
+            for(int j = 0; j < 32 - len; j++){
+                s = "0" + s;
+            }
+        }
+        s = s.substring(0, 1) + "_" + s.substring(1, 9) + "_" + s.substring(9);
+        return s;
+    }
+}
